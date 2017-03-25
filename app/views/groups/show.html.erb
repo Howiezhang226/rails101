@@ -5,7 +5,7 @@
     <%= link_to("Edit", edit_group_path(@group), class: "btn btn-primary pull-right")%>
   <% end %>
   <p><%= @group.description %> </p>
-  <table class="tablle">
+  <table class="table">
     <thead>
       <tr>
           <th>文章内容</th>
@@ -23,4 +23,7 @@
         <% end %>
       </tbody>
     </table>
+       <div class="text-center">
+     <%= will_paginate @posts %>
+     </div>
 </div>
